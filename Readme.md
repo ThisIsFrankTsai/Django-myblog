@@ -5,7 +5,7 @@
 ![Alt text](static/images/logo.png)
 
 創建專案:  
-''' 
+'''   
 django-admin startproject myblog  
 cd myblog  
 python manage.py startapp mainsite  
