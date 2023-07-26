@@ -7,15 +7,17 @@
     {% for post in posts %}
     <div class='panel-heading'>
         <p style=‘font-family:微軟正黑體;font-size:14pt;font-weight:bold;'>
+            <img width="50px" src="{{ post.pic_url }}">
             <a href='/post/{{post.slug}}'>{{ post.title }}</a>
         </p>
     </div>
-    <div class='panel-body' style='background-color:#ffffdd'>
+    <div class='panel-body' style='background-color:#e6eff0'>
         <p>
-        {{ post.body | truncatechars:20 }}
+        <!-- {{ post.body | truncatechars:20 }} -->
+        {{ post.abstract  }}
         </p>
     </div>
-    <div class='panel-footer' style='background-color:#efefef'>
+    <div class='panel-footer' style='background-color:#d1cdcd'>
         <p>
         發佈時間：{{ post.pub_date | date:"Y-m-d(D), h:i:s"}}
         </p>
